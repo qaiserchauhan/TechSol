@@ -89,7 +89,7 @@ const NamesList = () => {
             <div className='flex items-center justify-between'>
               <p className='block font-normal text-gray-900'>{name.course}</p>
               <div className='block text-lg font-semibold text-success border-solid border-2 border-success rounded-md px-1'>
-                <p>${name.price}</p>
+                <p>₹{name.price}</p>
               </div>
             </div>
             <Link href={'/'}>

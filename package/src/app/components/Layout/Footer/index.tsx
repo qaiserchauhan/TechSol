@@ -30,7 +30,7 @@ const Footer = () => {
           <div className='col-span-4 flex flex-col gap-5'>
             <div>
               <Image
-                src='/images/logo/logo2.svg'
+                src='/images/logo/logo2.jpeg'
                 alt='Logo'
                 width={48}
                 height={64}
