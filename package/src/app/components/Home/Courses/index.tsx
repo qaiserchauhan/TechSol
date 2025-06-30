@@ -16,6 +16,7 @@ interface Name {
   | 'mobiledevelopment'
   | 'datascience'
   | 'cloudcomputing'
+  | 'cybersecurity'
 }
 
 const NamesList = () => {
@@ -45,6 +46,7 @@ const NamesList = () => {
     | 'webdevelopment'
     | 'datascience'
     | 'cloudcomputing'
+    | 'cybersecurity'
     | 'all'
     | null
   >('webdevelopment')
@@ -60,6 +62,9 @@ const NamesList = () => {
   const cloudComputing = courseDetail.filter(
     (name) => name.category === 'cloudcomputing'
   )
+    const cyberSecurity = courseDetail.filter(
+    (name) => name.category === 'cybersecurity'
+  )
 
   let selectedNames: Name[] = []
   if (selectedButton === 'mobiledevelopment') {
@@ -70,6 +75,9 @@ const NamesList = () => {
     selectedNames = dataScience
   } else if (selectedButton === 'cloudcomputing') {
     selectedNames = cloudComputing
+  }
+  else if (selectedButton === 'cybersecurity') {
+    selectedNames = cyberSecurity
   }
 
   const nameElements = selectedNames.map((name, index) => (
@@ -185,6 +193,17 @@ const NamesList = () => {
             }>
             Cloud Computing
           </button>
+          <button
+            onClick={() => setSelectedButton('cybersecurity')}
+            className={
+              'bg-white ' +
+              (selectedButton === 'cybersecurity'
+                ? 'text-black border-b-2 border-yellow-200'
+                : 'text-black/40') +
+              ' pb-2 text-lg hidden sm:block hover:cursor-pointer'
+            }>
+            Cyber Security
+          </button>
 
           {/* FOR MOBILE VIEW */}
           <Icon
@@ -226,6 +245,17 @@ const NamesList = () => {
             className={
               'text-5xl sm:hidden block ' +
               (selectedButton === 'cloudcomputing'
+                ? 'border-b-2 border-yellow-200'
+                : 'text-gray-400')
+            }
+          />
+
+          <Icon
+            icon='solar:cloud-line-duotone'
+            onClick={() => setSelectedButton('cybersecurity')}
+            className={
+              'text-5xl sm:hidden block ' +
+              (selectedButton === 'cybersecurity'
                 ? 'border-b-2 border-yellow-200'
                 : 'text-gray-400')
             }

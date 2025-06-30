@@ -23,6 +23,7 @@ const CourseData: CourseType[] = [
   { name: 'Web Development' },
   { name: 'Data Science' },
   { name: 'Cloud Computing' },
+  { name: 'Cyber Security' },
 ]
 
 const HourData: Hourtype[] = [
@@ -131,20 +132,20 @@ const CourseDetailData: CourseDetailType[] = [
   //   price: '99',
   //   category: 'datascience',
   // },
-  {
-    course: 'Scikit',
-    imageSrc: '/images/courses/coursesThree.svg',
-    profession: 'Scikit with Python Development',
-    price: '89',
-    category: 'datascience',
-  },
   // {
-  //   course: 'Iaas',
+  //   course: 'Scikit',
   //   imageSrc: '/images/courses/coursesThree.svg',
-  //   profession: 'Infra-as-a-Service',
-  //   price: '21',
-  //   category: 'cloudcomputing',
+  //   profession: 'Scikit with Python Development',
+  //   price: '89',
+  //   category: 'datascience',
   // },
+  {
+    course: 'CyberSecurity',
+    imageSrc: '/images/courses/coursesThree.svg',
+    profession: 'Cyber Security learning with Burp Suit',
+    price: '21000',
+    category: 'cybersecurity',
+  },
   {
     course: 'Iaas',
     imageSrc: '/images/courses/coursesFour.svg',
