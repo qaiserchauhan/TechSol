@@ -11,7 +11,7 @@ interface Name {
   course: string
   price: string
   profession: string
-  category:
+  category: 
   | 'webdevelopment'
   | 'mobiledevelopment'
   | 'datascience'
